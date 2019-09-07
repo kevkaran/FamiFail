@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29230.47
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FamiFail.Motherboard", "src\FamiFail.Motherboard\FamiFail.Motherboard.csproj", "{8B624512-7D3C-4A3D-8261-AA1976735E84}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FamiFail.Common.DataContracts", "FamiFail.Common.DataContracts\FamiFail.Common.DataContracts.csproj", "{02670F24-5428-435B-8FDD-09B9A9E8F90B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8B624512-7D3C-4A3D-8261-AA1976735E84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B624512-7D3C-4A3D-8261-AA1976735E84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B624512-7D3C-4A3D-8261-AA1976735E84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B624512-7D3C-4A3D-8261-AA1976735E84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02670F24-5428-435B-8FDD-09B9A9E8F90B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02670F24-5428-435B-8FDD-09B9A9E8F90B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02670F24-5428-435B-8FDD-09B9A9E8F90B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02670F24-5428-435B-8FDD-09B9A9E8F90B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {598A8FF6-6435-4A41-92AE-B092A2C67084}
+	EndGlobalSection
+EndGlobal
