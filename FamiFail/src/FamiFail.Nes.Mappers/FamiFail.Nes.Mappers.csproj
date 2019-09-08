@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FamiFail.Common.Jellybean\FamiFail.Common.Jellybean.csproj" />
+    <ProjectReference Include="..\FamiFail.Nes.DataContracts\FamiFail.Nes.DataContracts.csproj" />
+  </ItemGroup>
+
+</Project>

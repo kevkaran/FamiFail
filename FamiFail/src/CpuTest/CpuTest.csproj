@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FamiFail.Common.Jellybean\FamiFail.Common.Jellybean.csproj" />
+    <ProjectReference Include="..\FamiFail.Cpu.M6502\FamiFail.Cpu.M6502.csproj" />
+    <ProjectReference Include="..\FamiFail.Nes.Mappers\FamiFail.Nes.Mappers.csproj" />
+  </ItemGroup>
+
+</Project>
