@@ -32,7 +32,10 @@ namespace CpuTest
             using (var scope = provider.CreateScope())
             {
                 var cpu = scope.ServiceProvider.GetService<IM6502Cpu>();
-                cpu.StepAsync();
+                while (true)
+                {
+                    cpu.StepAsync();
+                }
             }
         }
     }

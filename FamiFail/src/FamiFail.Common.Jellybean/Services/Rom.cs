@@ -10,6 +10,7 @@ namespace FamiFail.Common.Jellybean.Services
     {
         public async Task<int> ReadAsync(int address)
         {
+            if (address > Memory.Length) return 0;
             return Memory[address];
         }
 

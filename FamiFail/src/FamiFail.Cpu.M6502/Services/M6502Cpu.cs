@@ -50,7 +50,33 @@ namespace FamiFail.Cpu.M6502.Services
 
         public async Task StepAsync()
         {
-            var instruction = await _bus.ReadAsync(ProgramCounter++);
+            if (!_state.ActionQueue.Any())
+            { // In order to simulate instructions taking multiple cycles we need to build
+                // a queue of things the CPU is going to do
+                var instruction = await _bus.ReadAsync(ProgramCounter++);
+                switch ((instruction & 0x03))
+                {
+                    case 0x00: // Control Operations
+
+                        break;
+
+                    case 0x01: // ALU Operations
+                        await _alu.ProcessAsync(instruction);
+                        break;
+
+                    case 0x02: // Read Write Modify operations
+
+                        break;
+
+                    case 0x03: // Unofficial opcodes
+
+                        break;
+                }
+            }
+            else
+            { //The queue has things to do, so do those things
+                _state.ActionQueue.Dequeue().Invoke();
+            }
         }
     }
 }
